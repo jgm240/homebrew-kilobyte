@@ -3,8 +3,12 @@
 [Kilobyte](https://jgm240.github.io/kilobyte/), the text-mode desktop, on macOS:
 
 ```
+brew trust jgm240/kilobyte
 brew install --cask jgm240/kilobyte/kilobyte
 ```
+
+(Homebrew installs from other people's taps only once you trust them: the
+first line does that, once.)
 
 That puts **Kilobyte.app** in Applications (it opens Kilobyte in a Terminal
 window) and brings the `kb` command with it. Only the command, without the app:
