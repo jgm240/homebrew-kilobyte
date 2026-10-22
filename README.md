@@ -3,6 +3,13 @@
 [Kilobyte](https://jgm240.github.io/kilobyte/), the text-mode desktop, on macOS:
 
 ```
+brew install --cask jgm240/kilobyte/kilobyte
+```
+
+That puts **Kilobyte.app** in Applications (it opens Kilobyte in a Terminal
+window) and brings the `kb` command with it. Only the command, without the app:
+
+```
 brew install jgm240/kilobyte/kilobyte-transition
 kb open
 ```

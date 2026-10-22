@@ -1,8 +1,8 @@
 class KilobyteTransition < Formula
   desc "Kilobyte, the text-mode desktop, on macOS (in a small Lima machine)"
   homepage "https://jgm240.github.io/kilobyte/"
-  url "https://github.com/jgm240/kilobyte/archive/refs/tags/macos-v1.5.0.tar.gz"
-  sha256 "cecfc971821a4a844c72110acb084899ec6b0656bd9f939f55fc0b9ea06bc183"
+  url "https://github.com/jgm240/kilobyte/archive/refs/tags/macos-v1.5.1.tar.gz"
+  sha256 "cd14bb483a46b08494500859fcbdb152e462448e28f4ccdde9ecfae312ed3ce1"
   license "GPL-3.0-or-later"
 
   depends_on "lima"
