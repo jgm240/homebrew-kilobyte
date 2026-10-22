@@ -8,17 +8,9 @@ cask "kilobyte" do
   homepage "https://jgm240.github.io/kilobyte/"
 
   depends_on formula: "jgm240/kilobyte/kilobyte-transition"
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "kilobyte-macos-v#{version}/macos/Kilobyte.app"
-
-  # Kilobyte.app is a small shell script, not signed by an Apple developer
-  # account: without this, macOS would refuse to open it until it is allowed
-  # in System Settings > Privacy & Security.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Kilobyte.app"]
-  end
 
   zap trash: "~/Library/LaunchAgents/io.github.jgm240.kilobyte.plist"
 
@@ -27,5 +19,9 @@ cask "kilobyte" do
     time it sets up Kilobyte's machine: Debian and Kilobyte download once
     (about 1 GB), which takes a few minutes. macOS asks once whether Kilobyte
     may control Terminal: allow it.
+
+    Kilobyte.app is not signed with an Apple developer account, so the first
+    time macOS will not open it: open System Settings > Privacy & Security
+    and click "Open Anyway" next to Kilobyte (once).
   EOS
 end
