@@ -1,6 +1,6 @@
 cask "kilobyte" do
-  version "1.5.3"
-  sha256 "abd4029f6697f77a47d6215d4f3cf586a042a1c660b840ef43718808a18adaae"
+  version "1.5.4"
+  sha256 "7266e0edd3faa5016cc8a76ba0fde5861d48a6243cb3932aee0334f8752da29e"
 
   url "https://github.com/jgm240/kilobyte/archive/refs/tags/macos-v#{version}.tar.gz"
   name "Kilobyte"
